@@ -1,5 +1,7 @@
 'use client';
 
+/** @jsxImportSource @emotion/react */
+
 import { Box, Typography } from '@mui/material';
 
 import { Link } from '~/components/Link';

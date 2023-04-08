@@ -1,6 +1,6 @@
 module.exports = {
   eslint: {
-    dirs: ['pages', 'utils', 'constants', 'components', 'typings'],
+    dirs: ['pages', 'utils', 'constants', 'components', 'typings', 'app'],
   },
   i18n: {
     locales: ['en-US'],
