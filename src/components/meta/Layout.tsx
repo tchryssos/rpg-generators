@@ -5,13 +5,13 @@ import { pxToRem } from '~/libs/util/styles';
 import { Head } from './Head';
 
 const Container = styled('div')`
-  max-width: ${({ theme }) => theme.breakpoints.values.lg};
+  max-width: ${({ theme }) => pxToRem(theme.breakpoints.values.lg)};
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: ${pxToRem(16)};
+  padding: ${({ theme }) => theme.spacing(1)};
   ${({ theme }) => theme.breakpoints.up('sm')} {
-    padding: ${pxToRem(32)};
+    padding: ${({ theme }) => theme.spacing(2)};
   }
 `;
 

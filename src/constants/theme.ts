@@ -16,7 +16,7 @@ export const mapIconTextBgColor = '#f0f8ff';
  */
 
 export const sharedTheme: DeepPartial<ThemeOptions> = {
-  spacing: (factor: number) => `${0.5 * factor}rem`,
+  spacing: (factor: number) => `${factor}rem`,
 };
 
 export const darkTheme: DeepPartial<ThemeOptions> = {

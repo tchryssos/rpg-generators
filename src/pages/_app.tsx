@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import {
   CssBaseline,
+  GlobalStyles,
   PaletteMode,
   ThemeProvider,
   useMediaQuery,
@@ -41,6 +42,21 @@ function Page({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <ThemeContext.Provider value={themeContextVal}>
         <CssBaseline />
+        <GlobalStyles
+          styles={{
+            'html, body, #app, #__next': {
+              height: '100%',
+              width: '100%',
+            },
+            'h1, h2, h3, h4, h5, h6, p, pre, figure, ul, li': {
+              padding: 0,
+              margin: 0,
+            },
+            'li, ul': {
+              listStyle: 'none',
+            },
+          }}
+        />
         <Component {...pageProps} />
       </ThemeContext.Provider>
     </ThemeProvider>
