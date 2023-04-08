@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { styled } from '@mui/material';
 import NextLink from 'next/link';
 
 interface LinkProps {
@@ -11,9 +11,10 @@ interface LinkProps {
 
 interface StyledProps extends Pick<LinkProps, 'underline'> {}
 
-const StyledLink = styled.a<StyledProps>`
+const StyledLink = styled('a')<StyledProps>`
   display: inline-block;
   text-decoration: ${({ underline }) => (underline ? 'underline' : 'none')};
+  color: ${({ theme }) => theme.palette.text.primary};
   :hover {
     filter: brightness(0.8);
   }
