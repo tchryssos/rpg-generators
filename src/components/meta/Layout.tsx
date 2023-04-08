@@ -1,17 +1,16 @@
-import styled from '@emotion/styled';
+import { styled } from '@mui/material';
 
-import { BREAKPOINT_VALUES } from '~/constants/theme';
-import { pxToRem } from '~/logic/util/styles';
+import { pxToRem } from '~/libs/util/styles';
 
 import { Head } from './Head';
 
-const Container = styled.div`
-  max-width: ${BREAKPOINT_VALUES.lg};
+const Container = styled('div')`
+  max-width: ${({ theme }) => theme.breakpoints.values.lg};
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: ${pxToRem(16)};
-  @media only screen and (min-width: ${BREAKPOINT_VALUES.xs}px) {
+  ${({ theme }) => theme.breakpoints.up('sm')} {
     padding: ${pxToRem(32)};
   }
 `;
