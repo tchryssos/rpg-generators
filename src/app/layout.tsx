@@ -21,7 +21,7 @@
 
 import { Metadata } from 'next';
 
-import { RootProviders } from './components/RootProviders';
+import { RootProviders } from './RootProviders';
 
 interface RootProps {
   children: React.ReactNode;
