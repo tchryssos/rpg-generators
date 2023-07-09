@@ -1,5 +1,6 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
+  "plugins": [{ "name": "next" }],
   "compilerOptions": {
     "moduleResolution": "node",
     "outDir": "./dist/",
@@ -29,5 +30,5 @@
     "incremental": true
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }

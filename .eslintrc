@@ -36,6 +36,7 @@
     "function-paren-newline": "off",
     "no-shadow": "off", // ts-rule below
     "prefer-arrow-callback": ["warn", { "allowNamedFunctions": true }],
+    "no-underscore-dangle": "off",
 
     // import
     "import/no-named-as-default": "off",
